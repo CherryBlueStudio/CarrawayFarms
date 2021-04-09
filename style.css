@@ -53,7 +53,7 @@ nav a:hover {
 /*Landing Page Section*/
 
 .landing-page-container {
-  background-image: url("img/BG.png");
+  background-image: url("img/BG.jpg");
   background-size: cover;
   height: 95vh;
   width: 100%;
@@ -168,7 +168,7 @@ nav a:hover {
 }
 
 .services-container {
-  background-image: url("/img/Machine.jpg");
+  background-image: url("img/Machine.jpg");
   background-size: cover;
   display: flex;
   font-size: large;
@@ -231,7 +231,7 @@ nav a:hover {
 /*About Us Section*/
 
 .about-container {
-  background-image: url("/img/Gustavo.jpg");
+  background-image: url("img/Gustavo.jpg");
   background-size: cover;
 
   color: white;
