@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+:root {
+  --GreenOnBlack: #70ae11;
+  --border-size: 3px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-image: url("img/Hay.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Nav*/
+
+nav {
+  background-color: black;
+  color: var(--GreenOnBlack);
+}
+
+.my-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav h1 {
+  font-weight: 900;
+}
+
+nav a {
+  color: var(--GreenOnBlack);
+  font-weight: 900;
+  font-size: large;
+  border: var(--border-size) solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  margin: 2px;
+}
+
+nav a:hover {
+  color: var(--GreenOnBlack);
+  border: var(--border-size) solid;
+}
+
+/*Landing Page Section*/
+
+.landing-page-container {
+  background-image: url("img/BG.png");
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page {
+  background-image: linear-gradient(#67790060, #242a00a8);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.landing-page h1 {
+  font-weight: 900;
+  font-size: 4em;
+  color: white;
+}
+
+.landing-page h3 {
+  font-family: "Indie Flower", cursive;
+  color: white;
+}
+
+.my-btn {
+  margin-top: 25px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.my-btn:hover {
+  animation-name: transition;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transition {
+  100% {
+    background-color: var(--GreenOnBlack);
+  }
+}
+
+.my-btn:active {
+  transform: scale(0.98);
+}
+
+.my-btn:focus {
+  outline: none;
+}
+
+/*Products Section*/
+
+.banner {
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.banner h1 {
+  color: var(--GreenOnBlack);
+  font-weight: 900;
+}
+
+.banner h3 {
+  font-family: "Indie Flower", cursive;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+
+.my-card {
+  background-color: white;
+  text-align: justify;
+  width: 30%;
+  max-width: 500px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.my-card h3 {
+  text-align: center;
+  margin: 10px;
+  font-weight: 900;
+  color: var(--GreenOnBlack);
+}
+
+.my-card p {
+  font-family: "Indie Flower", cursive;
+  font-size: large;
+  margin-top: 10px;
+}
+
+/*Services Section*/
+
+.services-bg-container {
+  background-color: white;
+  padding-bottom: 50px;
+  padding: 100px 0;
+}
+
+.services-container {
+  background-image: url("/img/Machine.jpg");
+  background-size: cover;
+  display: flex;
+  font-size: large;
+  max-width: 80%;
+  margin: auto;
+  border-radius: 50px;
+  -webkit-box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.black-div {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+  color: white;
+  flex: 1;
+  padding: 30px;
+  border-radius: 50px 0 0 50px;
+}
+
+.black-div h2 {
+  font-weight: 900;
+  color: var(--GreenOnBlack);
+}
+
+.black-div h5 {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.white-div {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 0 50px 50px 0;
+}
+
+.my-card-rounded {
+  background-color: white;
+  text-align: justify;
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 9px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.my-card-rounded h3 {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  color: var(--GreenOnBlack);
+}
+
+/*About Us Section*/
+
+.about-container {
+  background-image: url("/img/Gustavo.jpg");
+  background-size: cover;
+
+  color: white;
+}
+
+.about-us {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  max-width: 40%;
+  padding: 25px;
+  margin: 0 50px;
+  font-size: large;
+}
+
+.about-us h2 {
+  font-weight: 900;
+  color: var(--GreenOnBlack);
+  margin: 25px 0;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.about-us a {
+  color: white;
+}
+
+.about-us a:hover {
+  color: var(--GreenOnBlack);
+  text-decoration: none;
+}
+
+.about-us .bold {
+  font-weight: 900;
+  color: var(--GreenOnBlack);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  font-size: large;
+  padding: 25px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--GreenOnBlack);
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .my-card {
+    width: 75%;
+  }
+  .services-container {
+    display: block;
+    border-radius: 0;
+    max-width: 100%;
+    box-shadow: none;
+  }
+  .white-div,
+  .black-div {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .about-us {
+    max-width: 80%;
+    margin: auto;
+  }
+}
